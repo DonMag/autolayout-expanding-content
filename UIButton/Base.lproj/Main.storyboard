@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5dK-g1-hj0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwe-3F-Xsn">
+                                        <rect key="frame" x="8" y="8" width="288" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Give Feedback"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuU-cQ-eNR">
+                                        <rect key="frame" x="304" y="8" width="288" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Find Similar"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cuU-cQ-eNR" secondAttribute="trailing" constant="8" id="2sC-jK-CA3"/>
+                                    <constraint firstItem="nwe-3F-Xsn" firstAttribute="leading" secondItem="5dK-g1-hj0" secondAttribute="leading" constant="8" id="CT0-BK-wNT"/>
+                                    <constraint firstItem="cuU-cQ-eNR" firstAttribute="top" secondItem="5dK-g1-hj0" secondAttribute="top" constant="8" id="EaZ-VF-4fi"/>
+                                    <constraint firstItem="nwe-3F-Xsn" firstAttribute="top" secondItem="5dK-g1-hj0" secondAttribute="top" constant="8" id="F9M-Iw-u9Y"/>
+                                    <constraint firstItem="nwe-3F-Xsn" firstAttribute="width" secondItem="cuU-cQ-eNR" secondAttribute="width" id="Gr6-Ve-P4m"/>
+                                    <constraint firstAttribute="bottom" secondItem="cuU-cQ-eNR" secondAttribute="bottom" constant="8" id="JfR-qp-xlJ"/>
+                                    <constraint firstItem="cuU-cQ-eNR" firstAttribute="leading" secondItem="5dK-g1-hj0" secondAttribute="leading" priority="750" constant="8" id="USc-fn-q9o"/>
+                                    <constraint firstItem="cuU-cQ-eNR" firstAttribute="leading" secondItem="nwe-3F-Xsn" secondAttribute="trailing" constant="8" id="hTF-c3-5fd"/>
+                                    <constraint firstAttribute="bottom" secondItem="nwe-3F-Xsn" secondAttribute="bottom" constant="8" id="hW0-zc-d5c"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydE-Yo-Uuh">
+                                <rect key="frame" x="8" y="54" width="210" height="30"/>
+                                <state key="normal" title="Remove Give Feedback Button"/>
+                                <connections>
+                                    <action selector="removeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bUE-7D-ynB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5dK-g1-hj0" secondAttribute="trailing" id="5yT-eY-wJc"/>
+                            <constraint firstItem="ydE-Yo-Uuh" firstAttribute="top" secondItem="5dK-g1-hj0" secondAttribute="bottom" constant="8" id="6ly-bE-olO"/>
+                            <constraint firstItem="5dK-g1-hj0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HvN-Vw-kuS"/>
+                            <constraint firstItem="5dK-g1-hj0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="uoa-Tp-oM9"/>
+                            <constraint firstItem="ydE-Yo-Uuh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="ylb-eM-i3j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="feedbackButton" destination="nwe-3F-Xsn" id="o6K-20-bcO"/>
+                        <outlet property="similarButton" destination="cuU-cQ-eNR" id="YK7-Gs-gzV"/>
+                        <outletCollection property="feedbackConstraints" destination="Gr6-Ve-P4m" collectionClass="NSMutableArray" id="zde-Cv-AyT"/>
+                        <outletCollection property="feedbackConstraints" destination="hTF-c3-5fd" collectionClass="NSMutableArray" id="LOH-7D-wwV"/>
+                        <outletCollection property="feedbackConstraints" destination="CT0-BK-wNT" collectionClass="NSMutableArray" id="ftO-h1-R14"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="334" y="429"/>
+        </scene>
+    </scenes>
+</document>
